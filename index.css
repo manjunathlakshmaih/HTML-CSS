@@ -21,7 +21,7 @@ body{
 .main_header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 nav{
   font-size: 18px;
@@ -280,7 +280,7 @@ footer{
   font-style: italic;
 } 
 
-.row{
+/* .row{
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -294,4 +294,33 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+
+/* CSS-grid LAYOUT */
+
+.container {
+ display: grid;
+ grid-template-columns: 1fr 300px;
+ column-gap: 75PX;
+ row-gap: 60PX;
+ align-items: start;
+}
+
+.main_header {
+  /* grid-column: 1 /span 2; */
+  grid-column: 1 / -1;
+
+}
+
+article {
+
+}
+
+aside {
+
+}
+
+footer {
+  grid-column: 1 / -1;
 }
